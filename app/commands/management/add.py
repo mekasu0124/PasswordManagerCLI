@@ -1,26 +1,18 @@
+from app.utilities.json import JsonEngine
+
 import click
 
 
 @click.command(name="add")
 @click.option("--link", required=True, help="The link associated with the password.")
 @click.option("--username", required=True, help="The username associated with the password.")
-@click.option("--password", help="The password you want to save.")
-def add_pw_command(link: str, username: str, password: str) -> None:
-    click.echo(f"Data To Save:\n\nLink: {link}\nUsername: {username}\nPassword: {password}")
+@click.option("--password", required=True, help="The password you want to save.")
+def add_command(link: str, username: str, password: str):
+    """
+    Allows the user to save their desired link, username, and password
+    """
 
-    user_agree = input("\n\nDo You Approve? (Y/N): ")
-
-    while not user_agree.lower() in ["y","n"]:
-        click.echo("Invalid Input. Enter 'Y' for Yes or 'N' for No")
-
-        user_agree = input("\n\nDo You Approve? (Y/N): ")
-
-        if user_agree.lower() in ["y","n"]:
-            break
-
-    if user_agree.lower() == "n":
-        click.echo("You Disapproved. Please Run The Command Again Later")
-        exit(0)
+    json_engine = JsonEngine()
 
     data_to_save = {
         "link": link,
@@ -28,4 +20,5 @@ def add_pw_command(link: str, username: str, password: str) -> None:
         "password": password
     }
 
-    click.echo(f"Data Saved: {data_to_save}")
+    result = json_engine.save_entry(data_to_save)
+    return click.echo(result)
