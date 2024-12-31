@@ -1,0 +1,6 @@
+Project Started: 12/31/2024 @ 09:35 hours.
+
+12/31/2024
+  - Project Instantiated
+  - Created venv
+  - Created dockerfile
