@@ -1,0 +1,6 @@
+env/
+password_manager.egg-info
+.pytest_cache/
+__pycache__/
+build/
+run.py
