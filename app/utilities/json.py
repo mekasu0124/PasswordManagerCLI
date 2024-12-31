@@ -20,6 +20,14 @@ class JsonEngine:
             return db_file
         
         return db_file
+            
+    def list_all_entries(self):
+        file_path = self.check_exists()
+
+        with open(file_path, 'r', encoding="utf-8-sig") as f:
+            data = json.load(f)
+
+            return data if data else None
     
     def save_entry(self, new_entry: dict):
         file_path = self.check_exists()
@@ -62,11 +70,18 @@ class JsonEngine:
             json.dump(current_data, new, indent=2)
 
         return "Entry Updated Successfully"
-            
-    def list_all_entries(self):
+    
+    def delete_entry(self, entry_to_delete: dict):
         file_path = self.check_exists()
 
         with open(file_path, 'r', encoding="utf-8-sig") as f:
             data = json.load(f)
 
-            return data if data else None
+            for i, entry in enumerate(data):
+                if entry["link"] == entry_to_delete["link"] and entry["username"] == entry_to_delete["username"]:
+                    data.pop(i)
+
+                    with open(file_path, 'w+', encoding="utf-8-sig") as new:
+                        json.dump(data, new, indent=2)
+
+                    return "Entry Deleted Successfully"
