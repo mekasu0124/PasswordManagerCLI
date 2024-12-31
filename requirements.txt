@@ -4,6 +4,7 @@ packaging==24.2
 pip==24.0
 pluggy==1.5.0
 pytest==8.3.4
+python-dotenv==1.0.1
 setuptools==75.6.0
 uv==0.5.13
 uvloop==0.21.0
