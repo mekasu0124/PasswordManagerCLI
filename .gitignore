@@ -4,3 +4,4 @@ password_manager.egg-info
 __pycache__/
 build/
 run.py
+.env
