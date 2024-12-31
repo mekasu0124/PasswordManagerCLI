@@ -4,3 +4,8 @@ Project Started: 12/31/2024 @ 09:35 hours.
   - Project Instantiated
   - Created venv
   - Created dockerfile
+  - Created functioning hello command
+  - Created setup.py
+    - if contributing to the code, you can run pip install -e ./ in the root directory of the project and it will install it in development mode. It goes from running one command to another. It's better. trust me
+      - Go From: python3 app/main.py hello --name Mek
+      - Go To: pwm hello --name Mek
