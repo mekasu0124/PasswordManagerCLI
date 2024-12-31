@@ -7,7 +7,7 @@ import click
 @click.option("--link", required=True, help="The link associated with the password.")
 @click.option("--username", required=True, help="The username associated with the password.")
 @click.option("--password", required=True, help="The password you want to save.")
-def add_command(link: str, username: str, password: str):
+def add_entry(link: str, username: str, password: str):
     """
     Allows the user to save their desired link, username, and password
     """
