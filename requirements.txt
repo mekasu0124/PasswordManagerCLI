@@ -4,15 +4,20 @@ cycler==0.12.1
 fonttools==4.55.3
 iniconfig==2.0.0
 kiwisolver==1.4.8
+markdown-it-py==3.0.0
+mdurl==0.1.2
 numpy==2.2.1
 packaging==24.2
+-e file:///home/mekasu0124/Documents/Programming/Current/CLI/PasswordManager
 pillow==11.0.0
 pip==24.0
 pluggy==1.5.0
+pygments==2.18.0
 pyparsing==3.2.0
 pytest==8.3.4
 python-dateutil==2.9.0.post0
 python-dotenv==1.0.1
+rich==13.9.4
 setuptools==75.6.0
 six==1.17.0
 uv==0.5.13
