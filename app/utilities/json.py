@@ -4,8 +4,8 @@ import os
 
 class JsonEngine:
     def check_exists(self):
-        curr_dir = os.getcwd()
-        app_dir = os.path.join(curr_dir, "app")
+        curr_dir = os.path.dirname(os.path.abspath(__file__))
+        app_dir = os.path.join(curr_dir)
         data_dir = os.path.join(app_dir, ".data")
 
         if not os.path.isdir(data_dir):
