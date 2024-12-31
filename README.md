@@ -23,12 +23,45 @@ Welcome To Mek's Hub Password Manager - CLI Version. This project was inspired b
 |commands|usage|description|
 |---------|-----|-----------|
 | help | pwm --help | displays a help screen to the user for assistance with the application.|
-| hello | pwm hello | displays a default greeting of Hello, User! |
-| hello name | pwm hello --name "Your Name" | displays a greeting of Hello, Your Name! | 
+| hello | pwm hello --name "Your Name" | displays a greeting of Hello, Your Name! **Name is optional |
+| add | pwm add --link your_link --username your_username --password your_password | Saves the given information. **All Inputs Required |
+| update | pwm update --link your_link --username your_username --password your_password --new-username new_username --new-password new_password | Updates the stored entry with the new values given one or both exists. ** link, username, and password are required to accurately locate your matching saved entry |
+| delete | pwm delete --link your_link --username your_username --password your_password | Deletes the given entry after user confirmation ** link, username, password are required to accurately locate your matching saved entry |
 
 [<a href="#top">Top</a>]
 
 ### Installation
+
+- Regular Users
+   - <b><u>Clone the github repository</u></b>
+     - <code>git clone https://github.com/mekasu0124/PasswordManagerCLI.git</code> 
+   - <b><u>CD into the project</u></b>
+     - <code>cd PasswordManagerCLI</code>
+   - <b><u>Create the virtual environment</u></b>
+     - <b><u>Windows</u></b>
+       - <code>python.exe -m venv env</code>
+     - <b><u>Linux</u></b>
+       - <code>python3 -m venv env</code>
+   - <b><u>Activate the virtual environment</u></b>
+     - <b><u>Windows</u></b>
+       - <code>env\Scripts\activate</code>
+     - <b><u>Linux</u></b>
+       - <code>source env/bin/activate</code>
+   - <b><u>Install UV and UVLoop (Optional)</u></b>
+     - <code>pip install uv uvloop</code>
+   - <b><u>Install Requirements</u></b>
+     - prefix pip with uv if using UV and UVLoop. Example: <code>uv pip ...</code>
+     - <code>pip install -r requirements.txt</code>
+   - <b><u>Running the package</u></b>
+     - <b><u>Short vs Long Command Name</u></b>
+       - <b><u>pwm --help</u></b>
+         - prefix with uv if using UV and UVLoop
+         - <code>pip install -e ./</code>
+       - <b><u>python3 app/main.py --help</u></b>
+         - change python3 to python on Windows
+
+- Contributors
+  - Instead of cloning the repository, fork the repo and the follow from the second step down for <b><u>Regular Users</u></b> above
 
 [<a href="#top">Top</a>]
 
