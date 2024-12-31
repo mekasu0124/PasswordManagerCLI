@@ -1,6 +1,7 @@
 from app.commands.general.hello import hello_command
 from app.commands.management.add import add_entry
-from app.commands.management.update import update_command
+from app.commands.management.update import update_entry
+from app.commands.management.delete import delete_entry
 
 import click
 
@@ -16,7 +17,8 @@ def cli():
 
 cli.add_command(hello_command)
 cli.add_command(add_entry)
-cli.add_command(update_command)
+cli.add_command(update_entry)
+cli.add_command(delete_entry)
 
 
 if __name__ == '__main__':
