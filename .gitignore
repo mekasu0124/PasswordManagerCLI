@@ -6,5 +6,6 @@ build/
 run.py
 .env
 app/.data/
+app/.data/db.json
 codebase.md
 releases/
