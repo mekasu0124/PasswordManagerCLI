@@ -7,3 +7,4 @@ run.py
 .env
 app/.data/
 codebase.md
+releases/
