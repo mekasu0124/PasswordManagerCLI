@@ -1,7 +1,14 @@
+<label id="top"></label>
+
 <div align="center">
   <img src="./app/images/app-icon.jpeg" width="150" height="150" />
 
   # Mek's Hub - Password Manager - CLI Version
+</div>
+
+<div align="center">
+
+> BE ADVISED: This repository is no longer receiving support! For the version that is receiving current support, please head over to [Password Manager CLI V3](https://github.com/mekasu0124/PasswordManagerCLIV3)!
 </div>
 
 <div align="center">
@@ -65,6 +72,8 @@ Welcome to **Mek's Hub Password Manager - CLI Version**. This project was inspir
    ```bash
    pwm --help
    ```
+
+[<a href="#top">Top</a>]
 
 #### Contributors
 1. **Fork the repository**.
