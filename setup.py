@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='password_manager',
-    version='1.0.0',
+    version='2.1.2',
     packages=find_packages(),
     install_requires=[
         'Click',  # Ensure Click is listed as a dependency
