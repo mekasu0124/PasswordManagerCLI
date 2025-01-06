@@ -22,3 +22,14 @@ Project Started: 12/31/2024 @ 09:35 hours.
     - app icon
   - Installed
     - click
+
+01/01/2025
+  - Created add command
+  - Created delete command
+  - Created update command
+  - Created list all command with KastienDevOp215's help
+
+01/05/2024
+  - Started Version 1 - Re-Write
+  - Denoted this repo as no longer receiving support on the READEME.md file
+  - Created version 3 repository.
