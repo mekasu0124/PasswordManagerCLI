@@ -1,7 +1,9 @@
 from app.utilities.json import JsonEngine
-import click
+
 from rich.console import Console
 from rich.table import Table
+
+import click
 
 console = Console()
 
