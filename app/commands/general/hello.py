@@ -9,6 +9,7 @@ console = Console()
 @click.option("--name", default="User", help="Enter the name you want the system to greet you by")
 def hello_command(name: str) -> None:
     msg = Text()
+
     msg.append(f"Hello, {name}!\n", style="bold #385d8d")
     msg.append("This message shows that your installation worked! Yay!\n", style="#4c6770")
     msg.append("\n", style="#849da2")
@@ -19,10 +20,12 @@ def hello_command(name: str) -> None:
     msg.append(" or ", style="#4c6770")
     msg.append("pwm add --link your_link --username your_username --password your_password", style="bold #385d8d")
     msg.append(" to have your information readily available.", style="#4c6770")
+    
     panel = Panel(
         msg,
         title="[bold #1f2f45]Welcome to Mek's Hub Password Manager[/bold #1f2f45]",
         border_style="#849da2",
         padding=(1, 2),
     )
+    
     console.print(panel)
